@@ -2,7 +2,7 @@ import java.util.StringJoiner;
 
 public class Population {
 
-    int popSize;
+    private int popSize;
     private double growthCoEfficient;
     private double reductionCoEfficient;
     private String species; //eg. Tiger, Sheep, Poop.
@@ -86,5 +86,10 @@ public class Population {
 
     public String getSpecies() {
         return species;
+    }
+
+    public void addToPop (int addition)
+    {
+        popSize += addition;
     }
 }
